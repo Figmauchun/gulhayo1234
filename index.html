@@ -6,10 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header
-      class="py-10 m-auto items-senter flex justify-between max-w-[1240px]"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+      class="py-10 m-auto delay-[0.5s] items-senter flex justify-between max-w-[1240px]"
     >
       <img src="/SELHONO.png" alt="" />
       <nav class="m-auto items-senter flex gap-10">
@@ -23,11 +26,19 @@
       </nav>
     </header>
     <main>
-      <h3 class="text-[70px] text-[#fff]">Articles& News</h3>
+      <h3
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        class="text-[70px] delay-[1s] text-[#fff]"
+      >
+        Articles& News
+      </h3>
     </main>
     <section>
       <div
-        class="input-box flex justify-between m-auto max-w-[850px] bg-[#F4F0EC] border border-gray rounded-[10px] px-[34px] py-[36px] mt-[53px]"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class="input-box delay-[1.5s] flex justify-between m-auto max-w-[850px] bg-[#F4F0EC] border border-gray rounded-[10px] px-[34px] py-[36px] mt-[53px]"
       >
         <input
           class="bg-transparent w-full outline-none"
@@ -39,11 +50,17 @@
     </section>
     <section class="justify-between flex m-auto max-w-[1240px]">
       <div class="text-bottom flex gap-[72px]">
-        <div class="img-left">
-          <h2 class="text-[50px] text-[#292F36] mt-[54px]">Latest Post</h2>
+        <div data-aos="fade-right" data-aos-duration="2000" class="img-left">
+          <h2 class="text-[50px] delay-[0.5s] text-[#292F36] mt-[54px]">
+            Latest Post
+          </h2>
           <img src="/Rectangle 34.png" alt="" />
         </div>
-        <div class="text-reght max-w-[469px] mt-[151px]">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          class="text-reght delay-[1s] max-w-[469px] mt-[151px]"
+        >
           <h5 class="text-[#292F36] text-[25px]">
             Low Cost Latest Invented Interior Designing Ideas
           </h5>
@@ -89,7 +106,7 @@
       <div
         class="text-box grid grid-cols-4 flex gap-[101px] justify-between m-auto max-w-[1240px]"
       >
-        <div>
+        <div data-aos="fade-up" data-aos-duration="2000" class="delay-[0.1s]">
           <img src="/SELHONO.png" alt="" />
           <p class="text-[18px] text-[#4D5053] mt-[18px]">
             It is a long established fact that a reader will be distracted
@@ -97,7 +114,7 @@
           </p>
           <img class="mt-[18px]" src="/Icons.png" alt="" />
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="2000" class="delay-[1s]">
           <h5 class="text-[22px] text-[#292F36]">Pages</h5>
           <ul>
             <li class="text-[18px] text-[#4D5053] mt-[15px]">About Us</li>
@@ -107,7 +124,7 @@
             <li class="text-[18px] text-[#4D5053] mt-[15px]">Services</li>
           </ul>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="2000" class="delay-[1.5s]">
           <h5 class="text-[22px] text-[#292F36]">Services</h5>
           <ul>
             <li class="text-[18px] text-[#4D5053] mt-[15px]">Kitchan</li>
@@ -117,7 +134,7 @@
             <li class="text-[18px] text-[#4D5053] mt-[15px]">Bedroom</li>
           </ul>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="2000" class="delay-[2s]">
           <h5 class="text-[22px] text-[#292F36]">Contact</h5>
           <ul>
             <li class="text-[18px] text-[#4D5053] mt-[15px]">
@@ -133,5 +150,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
